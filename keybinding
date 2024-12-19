@@ -1,4 +1,4 @@
-
+[
   {
     "key": "ctrl-h",
     "command": "workbench.action.navigateLeft"
@@ -189,14 +189,25 @@
   },
 
   {
-        "key": "ctrl+down",
-        "command": "workbench.action.terminal.focus",
-    },
-    {
-        "key": "ctrl+up",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    }
+    "key": "ctrl+a down",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+a up",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  
+  {
+    "key": "ctrl+a left",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a right",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  }
 
 ]
- 
